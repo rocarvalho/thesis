@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="Common" projectFiles="true">
+        <itemPath>src/Algorithm.cpp</itemPath>
+        <itemPath>src/Algorithm.h</itemPath>
+        <itemPath>src/Problem.cpp</itemPath>
+        <itemPath>src/Problem.h</itemPath>
+        <itemPath>src/Properties.cpp</itemPath>
+        <itemPath>src/Properties.h</itemPath>
+        <itemPath>src/Solution.cpp</itemPath>
+        <itemPath>src/Solution.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="CycleHub" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="UMAHLP" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="UMApHLP" projectFiles="true">
+        <itemPath>src/UMApHLP_Benders.cpp</itemPath>
+        <itemPath>src/UMApHLP_Benders.h</itemPath>
+        <itemPath>src/UMApHLP_Model.cpp</itemPath>
+        <itemPath>src/UMApHLP_Model.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="USAHLP" projectFiles="true">
+      </logicalFolder>
+      <itemPath>src/main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Arquivos de Teste"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos Importantes"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>/opt/gurobi702/linux64/include</pElem>
+            <pElem>lib</pElem>
+          </incDir>
+          <commandLine>-m64 -fopenmp -lpthread</commandLine>
+          <preprocessorList>
+            <Elem>_GLIBCXX_USE_CXX11_ABI=0</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/opt/gurobi702/linux64/lib</pElem>
+          </linkerAddLib>
+          <commandLine>-lgurobi_c++ -lgurobi70 -lm -lpthread</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="src/Algorithm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Algorithm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Problem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Problem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Properties.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Properties.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Solution.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Solution.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UMApHLP_Benders.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UMApHLP_Benders.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UMApHLP_Model.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UMApHLP_Model.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+          <incDir>
+            <pElem>/opt/gurobi702/linux64/include</pElem>
+            <pElem>lib</pElem>
+          </incDir>
+          <commandLine>-m64 -fopenmp -lpthread</commandLine>
+          <preprocessorList>
+            <Elem>_GLIBCXX_USE_CXX11_ABI=0</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/opt/gurobi702/linux64/lib</pElem>
+          </linkerAddLib>
+          <commandLine>-lgurobi_c++ -lgurobi70 -lm -lpthread</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="src/Algorithm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Algorithm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Problem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Problem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Properties.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Properties.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Solution.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Solution.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UMApHLP_Benders.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UMApHLP_Benders.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UMApHLP_Model.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UMApHLP_Model.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
